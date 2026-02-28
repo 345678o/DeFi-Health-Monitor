@@ -6,6 +6,7 @@ import { AuthProvider } from '@/contexts/auth-context'
 import { CurrencyProvider } from '@/components/top-bar'
 import { WalletProvider } from '@/contexts/wallet-context'
 import { Toaster } from 'sonner'
+import { Web3Provider } from '@/components/web3-provider'
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
@@ -41,14 +42,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans antialiased">
-        <AuthProvider>
-          <CurrencyProvider>
-            <WalletProvider>
-              {children}
-              <Toaster position="bottom-right" theme="light" />
-            </WalletProvider>
-          </CurrencyProvider>
-        </AuthProvider>
+        <Web3Provider>
+          <AuthProvider>
+            <CurrencyProvider>
+              <WalletProvider>
+                {children}
+                <Toaster position="bottom-right" theme="light" />
+              </WalletProvider>
+            </CurrencyProvider>
+          </AuthProvider>
+        </Web3Provider>
         <Analytics />
       </body>
     </html>

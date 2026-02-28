@@ -1,17 +1,30 @@
-# DeFi Health Monitor
+# LiquidGuard
 
-> **Enterprise-Grade Risk Intelligence Platform for Decentralized Finance**
+> **Enterprise-Grade Web3 Risk Intelligence Platform for Decentralized Finance**
 
-A sophisticated financial analytics platform that provides real-time risk monitoring, liquidation protection, and portfolio management for DeFi lending protocols. Built with institutional-grade design principles and Bloomberg Terminal aesthetics.
+A sophisticated blockchain-native financial analytics platform that provides real-time risk monitoring, liquidation protection, and portfolio management for DeFi lending protocols. Built with institutional-grade design principles and integrated with leading Web3 infrastructure.
 
-![DeFi Health Monitor](https://img.shields.io/badge/DeFi-Health%20Monitor-blue?style=for-the-badge)
-![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)
+![LiquidGuard](https://img.shields.io/badge/LiquidGuard-Web3%20DeFi-blue?style=for-the-badge)
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white)
+![Wagmi](https://img.shields.io/badge/Wagmi-1C1B1F?style=for-the-badge)
 
-## 🚀 Features
+## 🚀 Web3 Features
 
-### 📊 **Real-Time Risk Monitoring**
+### 🔗 **Multi-Chain Support**
+- **Ethereum Mainnet**: Full Aave V3, Compound V3, MakerDAO integration
+- **Layer 2 Networks**: Polygon, Arbitrum, Optimism support
+- **Testnet Support**: Sepolia, Goerli for development and testing
+- **Cross-Chain Analytics**: Unified portfolio view across all chains
+
+### 🔐 **Wallet Integration**
+- **MetaMask**: Native browser wallet support
+- **WalletConnect**: Mobile and hardware wallet compatibility
+- **Multi-Wallet**: Support for multiple wallet providers
+- **Auto-Reconnect**: Persistent wallet sessions
+
+### 📊 **Real-Time Blockchain Data**
 - **Health Factor Tracking**: Continuous monitoring of liquidation risk
 - **Portfolio Analytics**: Comprehensive collateral and debt analysis
 - **Risk Classification**: Automated risk level assessment (Low/Moderate/High/Critical)
