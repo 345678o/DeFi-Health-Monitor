@@ -11,7 +11,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'DeFi Health Monitor | Risk Protection for Decentralized Lending',
+  title: 'LiquidGuard | Risk Protection for Decentralized Lending',
   description: 'Autonomous risk intelligence platform protecting users from liquidation in DeFi lending protocols. Monitor, predict, and protect your portfolio in real-time.',
   generator: 'v0.app',
   icons: {

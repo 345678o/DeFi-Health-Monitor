@@ -63,7 +63,7 @@ export function TopBar() {
             <Activity className="w-3.5 h-3.5 text-primary" />
           </div>
           <h1 className="text-sm font-semibold text-foreground tracking-tight">
-            DeFi Health Monitor
+            LiquidGuard
           </h1>
         </div>
         <div className="flex items-center gap-2 px-3 py-1 bg-green-500/10 border border-green-500/20">
