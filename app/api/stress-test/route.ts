@@ -86,7 +86,7 @@ export async function POST(request: NextRequest) {
           success: true,
           data: customResults,
           type: 'custom',
-          count: customResults.length
+          count: customResults.scenarios.length
         });
 
       case 'export':
@@ -110,11 +110,11 @@ export async function POST(request: NextRequest) {
           success: true,
           data: results,
           type: 'standard',
-          count: results.length,
+          count: results.scenarios.length,
           summary: {
-            worstCase: results.find(r => r.severity === 'Critical'),
-            safeScenarios: results.filter(r => r.severity === 'Safe').length,
-            riskScenarios: results.filter(r => r.severity !== 'Safe').length
+            worstCase: results.scenarios.find(r => r.severity === 'Critical'),
+            safeScenarios: results.scenarios.filter(r => r.severity === 'Safe').length,
+            riskScenarios: results.scenarios.filter(r => r.severity !== 'Safe').length
           }
         });
     }

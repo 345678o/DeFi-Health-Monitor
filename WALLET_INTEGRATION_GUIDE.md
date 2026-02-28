@@ -72,26 +72,25 @@ The wallet connection logo system is now fully implemented and ready for integra
 
 ### Option 1: Add to Top Bar (Recommended)
 
-Replace the current top bar with the enhanced version that includes wallet functionality:
+The top bar already includes wallet functionality through the `TopBar` component in the protected layout:
 
 ```typescript
-// In app/(protected)/layout.tsx
-import { EnhancedTopBar } from '@/components/enhanced-top-bar';
-import { WalletProvider } from '@/contexts/wallet-context';
+// In app/(protected)/layout.tsx - Already configured
+import { TopBar } from '@/components/top-bar';
 
 export default function ProtectedLayout({ children }) {
   return (
-    <WalletProvider>
-      <div className="min-h-screen bg-background">
-        <EnhancedTopBar />
-        <div className="flex">
-          <Sidebar />
-          <main className="flex-1">
+    <AuthGuard>
+      <div className="flex h-screen bg-background">
+        <Sidebar />
+        <div className="flex-1 flex flex-col">
+          <TopBar />
+          <main className="flex-1 overflow-auto">
             {children}
           </main>
         </div>
       </div>
-    </WalletProvider>
+    </AuthGuard>
   );
 }
 ```
